@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FCP_Academy</title>
+        <link rel="icon" href="images/logo-removebg-preview.png" type="image/png">
+        <meta name="description" content="Це веб-сайт який допомагає учням вивчати олімпіадне програмування легко" />
+        <meta name="keywords" content="FCP_Academy, олімпіадне програмування, програмування, алгоритми, задачі з олімпіадного програмування, спортивне програмування" />
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="JS/courses.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <span class="header_left">
+                <img src="images/logo-removebg-preview.png" alt="FCP_Academy Logo">
+                <span id="logo-text">FCP_Academy</span>
+            </span>
+        </header>
+
+        <hr>
+
+        <main>
+
+            <div id="courses-title">
+                Теми з олімпіадного програмування
+            </div>
+
+            <br>
+
+            <div id="search_block">
+
+                <form id="name_course">
+                    <input
+                        id="name_course_input"
+                        type="text"
+                        placeholder="Введіть назву теми..."
+                        maxlength="100"
+                    />
+                </form>
+
+                <!-- Dropdown -->
+                <div class="language-menu">
+
+                    <button id="language_programming">
+                        Мови програмування
+                    </button>
+
+                    <div class="dropdown">
+
+                        <a href="#" data-lang="all">Усі</a>
+
+                        <a href="#" data-lang="C++">C++</a>
+
+                        <a href="#" data-lang="Python">Python</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <!-- Курси (генеруються динамічно з JS/courses.js) -->
+            <div class="courses"></div>
+
+        </main>
+
+    </body>
+</html>
