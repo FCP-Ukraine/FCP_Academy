@@ -303,3 +303,172 @@ summary {
 a.text-color:hover{
     color: #db1d1d;
 }
+
+/* ==========================================
+   АДАПТИВНІСТЬ (Responsive Design)
+   ========================================== */
+
+/* Планшет: 768px - 1024px */
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+        margin: 0 5%;
+        padding: 0 4%;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 5%;
+    }
+
+    #courses-title {
+        font-size: 32px;
+    }
+
+    #language_programming {
+        width: 220px;
+        font-size: 18px;
+    }
+
+    #name_course_input {
+        font-size: 18px;
+    }
+}
+
+/* Мобільний: до 768px */
+@media (max-width: 768px) {
+    /* Хедер */
+    header {
+        padding: 5px 10px;
+    }
+
+    .header_left {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    /* Основний контент */
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0 4%;
+    }
+
+    #courses-title {
+        font-size: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #courses-title1 {
+        font-size: 26px;
+        height: 140px;
+    }
+
+    /* Пошук */
+    #search_block {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    #name_course {
+        width: 100%;
+    }
+
+    #name_course_input {
+        font-size: 16px;
+        height: 42px;
+    }
+
+    .language-menu {
+        width: 100%;
+    }
+
+    #language_programming {
+        width: 100%;
+        font-size: 16px;
+        height: 42px;
+        border-radius: 12px;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown a {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Сітка курсів — 1 колонка */
+    .courses {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 0;
+    }
+
+    .course-card {
+        height: 130px;
+    }
+
+    .course-card h2 {
+        font-size: 20px;
+    }
+
+    .course-card img {
+        height: 110px;
+    }
+
+    .course-card1 h2 {
+        font-size: 24px;
+    }
+
+    .course-card1 img {
+        width: 110px;
+    }
+
+    /* Текст курсу */
+    .course-text {
+        font-size: 16px;
+    }
+
+    .course-text1 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    code {
+        font-size: 14px;
+    }
+
+    pre {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* Дуже малий екран: до 420px */
+@media (max-width: 420px) {
+    .header_left {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    #courses-title {
+        font-size: 22px;
+    }
+
+    .course-card h2 {
+        font-size: 17px;
+    }
+}
