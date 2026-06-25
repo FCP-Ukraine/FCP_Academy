@@ -513,6 +513,193 @@ max(a, max(b, c));</code></pre>
             </div>
 
         `
+    },
+    {
+        id: 10,
+        title: "Умови",
+        language: "Python",
+        img: "images/Python-logo-notext.svg.png",
+        text: `
+            <div class="course-card1">
+                    <img src="images/Python-logo-notext.svg.png">
+                    <h2>Умови</h2>
+            </div>
+            <br><br>
+            <div class="course-text">
+                <p>Умови дозволяють програмі виконувати різні дії залежно від результату перевірки. Наприклад, якщо ціле число n більше шести, то треба вивести "YES", інакше — "NO".</p>
+                <br>
+                <p>Закодуємо це так:</p>
+<pre><code>n = int(input())
+if n > 6:
+    print("YES")
+else:
+    print("NO")</code></pre>
+                <br>
+                <p class="course-text1">У Python для умов використовують:</p>
+                <p><span class="text-color"> if </span> — «якщо»</p>
+                <p><span class="text-color"> elif </span> — «інакше якщо»</p>
+                <p><span class="text-color"> else </span> — «інакше»</p>
+                <p>Після умови обов’язково ставиться двокрапка.</p>
+                <br>
+                <p>Умови в Python, на відміну від C++, не використовують фігурні дужки {}. Замість цього блоки коду виділяють відступами. Усі команди, які належать до <span class="text-color">if, elif або else </span>, мають бути записані з однаковим відступом. Наприклад: </p>
+<pre><code>n = int(input())
+if n > 6:
+    print("YES")
+    print(n)
+else:
+    print("NO")</code></pre>
+                <p>У цьому прикладі обидві команди після <span class="text-color">if n > 6:</span> виконуються тільки тоді, коли умова істинна, бо вони записані з відступом.</p>
+                <br>
+                <p>Якщо варіантів декілька, використовують <span class="text-color">elif</span>. Наприклад:</p>
+<pre><code>n = int(input())
+if n > 0:
+    print("positive")
+elif n < 0:
+    print("negative")
+else:
+    print("zero")</code></pre>
+                <p>*У цьому прикладі програма перевіряє, чи число додатне, від’ємне або дорівнює нулю.</p>
+                <br>
+                <p>Якщо потрібно перевірити декілька умов одночасно, використовують логічні оператори. Наприклад, якщо треба перевірити, що n більше 6 і менше 9, записують так:</p>
+<pre><code>if n > 6 and n < 9:
+    print("YES")</code></pre>
+                <p class="course-text1">Логічні оператори:</p>
+                <p>and — логічне «і»</p>
+                <p>or — логічне «або»</p>
+                <p>not — логічне «не»</p>
+                <p class="course-text1">Оператори порівняння:</p>
+                <p> != — не дорівнює</p>
+                <p> == — дорівнює</p>
+                <p> < — менше</p>
+                <p> <= — менше або дорівнює</p>
+                <p> > — більше</p>
+                <p> >= — більше або дорівнює</p>
+                <br>
+                <p>У Python можна записувати подвійне порівняння так, як у математиці:</p>
+<pre><code>if 6 < n < 9:
+    print("YES")</code></pre>
+                <p>Такий запис означає, що число n більше 6 і менше 9 одночасно.</p>
+                <br>
+                <p>Ось набір задач з eolymp, які допоможуть вам закріпити тему умов:</p>
+                <p><a href="https://eolymp.com/uk/problems/8618" target="_blank" class="text-color">8618</a></p>
+                <p><a href="https://eolymp.com/uk/problems/76" target="_blank" class="text-color">76</a></p>
+                <p><a href="https://eolymp.com/uk/problems/6279" target="_blank" class="text-color">6279</a></p>
+                <p><a href="https://eolymp.com/uk/problems/915" target="_blank" class="text-color">915</a></p>
+                <p><a href="https://eolymp.com/uk/problems/1955" target="_blank" class="text-color">1955</a></p>
+                <p><a href="https://eolymp.com/uk/problems/4" target="_blank" class="text-color">4</a></p>
+                <p><a href="https://eolymp.com/uk/problems/9428" target="_blank" class="text-color">9428</a></p>
+                <p><a href="https://eolymp.com/uk/problems/2036" target="_blank" class="text-color">2036</a></p>
+                <p><a href="https://eolymp.com/uk/problems/2392" target="_blank" class="text-color">2392</a></p>
+                <p><a href="https://eolymp.com/uk/problems/7330" target="_blank" class="text-color">7330</a></p>
+                <p><a href="https://eolymp.com/uk/problems/1357" target="_blank" class="text-color">1357</a></p>
+                <p><a href="https://eolymp.com/uk/problems/7375" target="_blank" class="text-color">7375</a></p>
+                <p><a href="https://eolymp.com/uk/problems/7458" target="_blank" class="text-color">7458</a></p>
+                <p><a href="https://eolymp.com/uk/problems/153" target="_blank" class="text-color">153</a></p>
+                <p><a href="https://eolymp.com/uk/problems/8" target="_blank" class="text-color">8</a></p>
+                <br>
+                <details>
+                <summary>Додаткові задачі</summary>
+                <p>8861-8884</p>           
+                </details>
+                <br><br><br><br><br><br>
+            </div>
+            `
+    },
+    {
+        id: 11,
+        title: "Умови",
+        language: "C++",
+        img: "images/ISO_C++_Logo.svg.png",
+        text: `
+            <div class="course-card1">
+                    <img src="images/ISO_C++_Logo.svg.png">
+                    <h2>Умови</h2>
+            </div>
+            <br><br>
+            <div class="course-text">
+                <p>Умови дозволяють програмі виконувати різні дії залежно від результату перевірки. Наприклад, якщо ціле число n більше шести, то треба вивести "YES", інакше — "NO".</p>
+                <br>
+                <p>Закодуємо це так:</p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    if (n > 6) {
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
+    }
+
+    return 0;
+}</code></pre>
+                <br>
+                <p class="course-text1">У C++ для умов використовують:</p>
+                <p><span class="text-color">if (умова)</span> — «якщо»</p>
+                <p><span class="text-color">else if (умова)</span> — «інакше якщо»</p>
+                <p><span class="text-color">else</span> — «інакше»</p>
+                <br>
+                <p>Якщо потрібно перевірити декілька умов одночасно, використовують логічні оператори. Наприклад, якщо треба перевірити, що n більше 6 і менше 9, записують так:</p>
+                <pre><code>if (n > 6 && n < 9)</code></pre>
+                <p>У C++ не можна записувати подвійне порівняння як у математиці. Потрібно окремо перевіряти обидві умови та з’єднувати їх через <span class="text-color">&&</span>.</p>
+                <br>
+                <p class="course-text1">Логічні оператори:</p>
+                <p>&& — логічне «і»</p>
+                <p>|| — логічне «або»</p>
+                <p>! — логічне «не»</p>
+                <br>
+                <p class="course-text1">Оператори порівняння:</p>
+                <p> != — не дорівнює</p>
+                <p> == — дорівнює</p>
+                <p> &lt; — менше</p>
+                <p> &lt;= — менше або дорівнює</p>
+                <p> &gt; — більше</p>
+                <p> &gt;= — більше або дорівнює</p>
+                <br><br><br>
+                <p>Ось набір задач з eolymp, які допоможуть вам закріпити тему умов:</p>
+                <p><a href="https://eolymp.com/uk/problems/8618" target="_blank" class="text-color">8618</a></p>
+                <p><a href="https://eolymp.com/uk/problems/76" target="_blank" class="text-color">76</a></p>
+                <p><a href="https://eolymp.com/uk/problems/6279" target="_blank" class="text-color">6279</a></p>
+                <p><a href="https://eolymp.com/uk/problems/915" target="_blank" class="text-color">915</a></p>
+                <p><a href="https://eolymp.com/uk/problems/1955" target="_blank" class="text-color">1955</a></p>
+                <p><a href="https://eolymp.com/uk/problems/4" target="_blank" class="text-color">4</a></p>
+                <p><a href="https://eolymp.com/uk/problems/9428" target="_blank" class="text-color">9428</a></p>
+                <p><a href="https://eolymp.com/uk/problems/2036" target="_blank" class="text-color">2036</a></p>
+                <p><a href="https://eolymp.com/uk/problems/2392" target="_blank" class="text-color">2392</a></p>
+                <p><a href="https://eolymp.com/uk/problems/7330" target="_blank" class="text-color">7330</a></p>
+                <p><a href="https://eolymp.com/uk/problems/1357" target="_blank" class="text-color">1357</a></p>
+                <p><a href="https://eolymp.com/uk/problems/7375" target="_blank" class="text-color">7375</a></p>
+                <p><a href="https://eolymp.com/uk/problems/7458" target="_blank" class="text-color">7458</a></p>
+                <p><a href="https://eolymp.com/uk/problems/153" target="_blank" class="text-color">153</a></p>
+                <p><a href="https://eolymp.com/uk/problems/8" target="_blank" class="text-color">8</a></p>
+                <br>
+                <details>
+                <summary>Додаткові задачі</summary>
+                <p>8861-8884</p>           
+                </details>
+                <br>
+
+                <details>
+                
+                <summary class="course-text1">Додатково</summary>
+                <br>
+                <p>Якщо змінну створити всередині блоку <span class="text-color">if</span>, то поза цим блоком вона не існує. Наприклад, у такому фрагменті коду:</p>
+<pre><code>int n;
+cin >> n;           
+if (n % 2 == 0) { // перевірка на парність числа
+    int a = n * 5;
+    cout << a << endl;
+}
+a = a + 2;
+cout << a;</code></pre>
+                <p>У результаті буде помилка компіляції, оскільки змінна <span class="text-color">a</span> існує лише всередині блоку <span class="text-color">if</span> і поза ним недоступна.</p>
+                </details>
+                <br><br><br><br><br><br>
+            </div>
+        `
     }
 ];
 
